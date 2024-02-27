@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
     return (
@@ -10,7 +11,7 @@ function App() {
                 <Route path='/home' />
                 <Route path='/projects' />
             </Routes>
-
+            <Footer />
         </div>
     )
 }
