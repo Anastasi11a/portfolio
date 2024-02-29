@@ -1,4 +1,5 @@
-import { Container, Col, Row, Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Button, Container, Col, Row, Image } from "react-bootstrap";
 import avatar from "../assets/avatar.jpg";
 
 const greeting = "Hello, I'm Anastasiia!";
@@ -8,7 +9,7 @@ const bio2 = "specialised in JavaScript, React";
 const Home = () => {
     return (
         <div className="home-container"> 
-            <Container fluid className="vh-100 d-flex flex-column justify-content-center align-items-center">
+            <Container fluid className="vh-100 d-flex flex-column bg-dark bg-gradient justify-content-center align-items-center">
                 <Row>
                     <Col className="text-center mb-4">
                         <Image 
@@ -22,9 +23,16 @@ const Home = () => {
                 </Row>
                 <Row>
                     <Col className="text-center mb-5">
-                        <h2 className="mb-5">{greeting}</h2>
-                        <h1 className="mb-3">{bio1}</h1>
-                        <h2>{bio2}</h2>
+                        <h2 className="mb-5 fs-3 text-light">{greeting}</h2>
+                        <p className="mb-3 fs-1 fw-bold text-info">{bio1}</p>
+                        <p className="mb-3 fs-2 fw-bold text-light">{bio2}</p>
+
+                        <Button 
+                            href="#"
+                            variant="outline-info"
+                            className="mt-4 mb-4">
+                            Download CV
+                        </Button>
                     </Col>
                 </Row>
             </Container>
