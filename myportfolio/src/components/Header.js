@@ -5,7 +5,7 @@ import './styles/HeaderStyle.css';
 
 const Header = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" data-bs-theme="dark" className="px-4 border-bottom border-secondary">
+        <Navbar collapseOnSelect expand="lg" bg="dark" data-bs-theme="dark" fixed="top" className="px-4 border-bottom border-secondary">
             <Container fluid>
                 <Navbar.Brand href="/home" className="fs-3 me-auto text-info fw-bold">
                     Portfolio

@@ -13,9 +13,9 @@ function App() {
                 <Route path='/home' element={<Home />} />
                 <Route path='/projects' element={<Projects />} />
             </Routes>
-            {/* <Footer /> */}
+            <Footer />
         </div>
-    )
+    );
 }
 
 export default App;
