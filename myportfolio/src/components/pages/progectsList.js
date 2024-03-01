@@ -1,13 +1,22 @@
-import project01 from "../assets/01-dc-img.jpg";
-import project02 from "../assets/02-Ttt-img.jpg";
-import project03 from "../assets/03-calc-img.jpg";
+import project00 from "../assets/quiz-img.jpg";
+import project01 from "../assets/littleLemon.jpg";
+import project02 from "../assets/ttt-img.jpg";
+import project03 from "../assets/calc-img.jpg";
+import project04 from "../assets/string.jpg";
+import project05 from "../assets/number.jpg";
 
 const projects = [
     {
-        title: 'Digital Clock',
-        skills: 'CSS, React',
+        title: 'Quiz Creator',
+        skills: 'React, Bootstrap v5',
+        img : project00,
+        gitHubLink: 'https://github.com/Anastasi11a/quizcreator',
+    },
+    {
+        title: 'Little Lemon website',
+        skills: 'HTML, CSS',
         img : project01,
-        gitHubLink: 'https://github.com/Anastasi11a/Digital-Clock-React/tree/master',
+        gitHubLink: 'https://github.com/Anastasi11a/',
     },
     {
         title: 'Tic-Tac-Toe',
@@ -22,10 +31,16 @@ const projects = [
         // gitHubLink:
     },
     {
-        title: 'future project',
-        skills: '',
-        img : project03,
-        // gitHubLink:
+        title: 'Function strings',
+        skills: 'CSS, React',
+        img : project04,
+        gitHubLink: 'https://github.com/Anastasi11a/reactString/tree/master/react-string',
+    },
+    {
+        title: 'Function numbers',
+        skills: 'CSS, React',
+        img : project05,
+        gitHubLink: 'https://github.com/Anastasi11a/react-number',
     }
 ];
 
