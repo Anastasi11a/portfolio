@@ -1,6 +1,14 @@
-import { Card, Row, Button } from "react-bootstrap";
+import { Card, Row } from "react-bootstrap";
 import projects from "./progectsList";
 import BtnGitHub from "./BtnGitHub";
+
+const cardStyle = { 
+    width: "90%",
+    height: "16rem",
+    margin: "auto", 
+    borderRadius: "0.4rem",
+    objectFit: "cover"
+};
 
 const Projects = () => {
     return (  
@@ -16,13 +24,7 @@ const Projects = () => {
 
                             <Card.Img 
                                 src={project.img} 
-                                style={{ 
-                                    width: "90%", 
-                                    height: "16rem",
-                                    margin: "auto", 
-                                    borderRadius: "0.4rem",
-                                    objectFit: "cover"
-                                }} 
+                                style={cardStyle} 
                             />
 
                             <Card.Body className="d-flex align-items-center justify-content-center">

@@ -16,8 +16,8 @@ const Footer = () => {
                             <Nav.Link
                                 href={url}
                                 key={url}
-                                className="footer-icon"
-                                target="_blank">
+                                target="_blank"
+                                className="footer-icon">
 
                                 <FontAwesomeIcon icon={icon} size="lg" />
                             </Nav.Link>
