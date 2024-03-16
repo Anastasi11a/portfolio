@@ -1,10 +1,6 @@
 import project00 from "../assets/quizG.jpg";
 import project01 from "../assets/littleLemon.jpg";
-import project02 from "../assets/ttt-img.jpg";
-import project03 from "../assets/calc-img.jpg";
-import project06 from "../assets/pswGn.jpg"
-// import project04 from "../assets/string.jpg";
-// import project05 from "../assets/number.jpg";
+import project02 from "../assets/pswGn.jpg"
 
 const projects = [
     {
@@ -21,33 +17,16 @@ const projects = [
     },
     {
         title: 'Password Generator',
-        skills: 'TypeScript, React',
-        img : project06,
-        gitHubLink: 'https://github.com/Anastasi11a/passwordgenerator'    },
-    {
-        title: 'Tic-Tac-Toe',
-        skills: 'HTML, CSS, JavaScript',
+        skills: 'TypeScript, React, ChakraUi',
         img : project02,
-        gitHubLink: 'https://github.com/Anastasi11a/tic-tac'
+        gitHubLink: 'https://github.com/Anastasi11a/passwordgenerator'
     },
-    {
-        title: 'Calculator',
-        skills: 'CSS, React',
-        img : project03,
-        // gitHubLink:
-    }
     // {
-    //     title: 'Function strings',
-    //     skills: 'CSS, React',
-    //     img : project04,
-    //     gitHubLink: 'https://github.com/Anastasi11a/reactString/tree/master/react-string',
+    //     title: '',
+    //     skills: '',
+    //     img : project,
+    //     gitHubLink: 'https://github.com/Anastasi11a/'
     // },
-    // {
-    //     title: 'Function numbers',
-    //     skills: 'CSS, React',
-    //     img : project05,
-    //     gitHubLink: 'https://github.com/Anastasi11a/react-number',
-    // }
 ];
 
 export default projects;

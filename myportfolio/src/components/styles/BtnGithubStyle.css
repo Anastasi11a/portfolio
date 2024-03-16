@@ -1,9 +1,0 @@
-.btn-git {
-    background-color: transparent;
-    color: white;
-    transition: color 0.3s;
-}
-
-.btn-git:hover {
-    color: #0dcaf0;
-}

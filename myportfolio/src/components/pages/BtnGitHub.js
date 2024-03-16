@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import '../styles/BtnGithubStyle.css';
+import { btnEffects, itemStyles } from '../styles';
 
 const BtnGitHub = ({ link }) => {
     return (  
@@ -9,7 +9,9 @@ const BtnGitHub = ({ link }) => {
             to={link} 
             alt="GitHub link"
             target="_blank"
-            className="btn-git"
+            style={itemStyles.btnStyle}
+            onMouseEnter={btnEffects.btnHoverEffect}
+            onMouseLeave={btnEffects.btnLeaveEffect}
         >
             <FontAwesomeIcon icon={faGithub} size="2x" />
         </Link>

@@ -1,15 +1,12 @@
 import { Container, Col, Row, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import socials from "./socials";
-import "./styles/FooterStyle.css";
+import { btnEffects, itemStyles } from "./styles";
 
 const Footer = () => {
     return (  
-        <Container 
-            fluid 
-            className="p-3 bg-dark position-fixed bottom-0 start-0 w-100 border-top border-secondary">
-
-            <Row className="justify-content-center">
+        <Container fluid style={itemStyles.containerFooter}> 
+            <Row style={itemStyles.rowFooter}>
                 <Col xs="auto">
                     <Nav>
                         {socials.map(({ icon, url }) => (
@@ -17,7 +14,9 @@ const Footer = () => {
                                 href={url}
                                 key={url}
                                 target="_blank"
-                                className="footer-icon">
+                                style={itemStyles.btnStyle}
+                                onMouseEnter={btnEffects.btnFooterHoverEffect}
+                                onMouseLeave={btnEffects.btnFooterLeaveEffect}>
 
                                 <FontAwesomeIcon icon={icon} size="lg" />
                             </Nav.Link>
@@ -26,7 +25,7 @@ const Footer = () => {
                 </Col>
             </Row>
             <Row>
-                <Col className="text-white text-center fs-6 mt-2">
+                <Col style={itemStyles.textFooter}>
                 Anastasiia Alekseeva • © 2024
                 </Col>
             </Row>
