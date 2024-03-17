@@ -1,5 +1,6 @@
 import { Button, Container, Col, Row, Image } from "react-bootstrap";
 import avatar from "../assets/avatar.jpg";
+import cv from "../assets/resume/Alekseeva_Anastasiia.pdf";
 import { itemStyles } from "../styles";
 
 const greeting = "Hello, I'm Anastasiia!";
@@ -27,7 +28,8 @@ const Home = () => {
                     <p style={itemStyles.bio2}>{bio2}</p>
 
                     <Button 
-                        href="#"
+                        href={cv}
+                        download="cv.pdf"
                         variant="outline-info"
                         style={itemStyles.btn}>
                         Download CV
