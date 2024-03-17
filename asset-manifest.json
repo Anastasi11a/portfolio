@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Anastasi11a/portfolio/tree/master/myportfolio/static/css/main.d5289b2f.css",
+    "main.js": "/Anastasi11a/portfolio/tree/master/myportfolio/static/js/main.72eb378d.js",
+    "static/js/453.83234151.chunk.js": "/Anastasi11a/portfolio/tree/master/myportfolio/static/js/453.83234151.chunk.js",
+    "static/media/Alekseeva_Anastasiia.pdf": "/Anastasi11a/portfolio/tree/master/myportfolio/static/media/Alekseeva_Anastasiia.b4e3e6dbb3a36dd9bc47.pdf",
+    "static/media/avatar.jpg": "/Anastasi11a/portfolio/tree/master/myportfolio/static/media/avatar.1f24b63c5b0d2f43d1f8.jpg",
+    "static/media/littleLemon.jpg": "/Anastasi11a/portfolio/tree/master/myportfolio/static/media/littleLemon.0fdbcd2ab9668642cfee.jpg",
+    "static/media/quizG.jpg": "/Anastasi11a/portfolio/tree/master/myportfolio/static/media/quizG.efb375801d7d9435ca81.jpg",
+    "static/media/pswGn.jpg": "/Anastasi11a/portfolio/tree/master/myportfolio/static/media/pswGn.b12156df532210a5da99.jpg",
+    "index.html": "/Anastasi11a/portfolio/tree/master/myportfolio/index.html",
+    "main.d5289b2f.css.map": "/Anastasi11a/portfolio/tree/master/myportfolio/static/css/main.d5289b2f.css.map",
+    "main.72eb378d.js.map": "/Anastasi11a/portfolio/tree/master/myportfolio/static/js/main.72eb378d.js.map",
+    "453.83234151.chunk.js.map": "/Anastasi11a/portfolio/tree/master/myportfolio/static/js/453.83234151.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5289b2f.css",
+    "static/js/main.72eb378d.js"
+  ]
+}
