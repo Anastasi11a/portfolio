@@ -1,5 +1,6 @@
 import { Card, Row } from "react-bootstrap";
 import projects from "./progectsList";
+import VisitSite from "../btn-links/VisitSite";
 import BtnGitHub from "./BtnGitHub";
 import { itemStyles } from "../styles";
 
@@ -10,9 +11,12 @@ const Projects = () => {
                 {projects.map((project, idx) => (
                     <div key={idx} className="mb-4">
                         <Card style={itemStyles.card}>
-                            <Card.Title style={itemStyles.cardTitle}>
-                                {project.title}
-                            </Card.Title>
+                            <Card.Body style={itemStyles.cardBody}>
+                                <Card.Title style={itemStyles.cardTitle}>
+                                    {project.title}
+                                </Card.Title>
+                                <VisitSite link={project.visitLink} />
+                            </Card.Body>
 
                             <Card.Img 
                                 src={project.img} 

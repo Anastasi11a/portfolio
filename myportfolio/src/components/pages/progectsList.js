@@ -7,19 +7,20 @@ const projects = [
         title: 'Restaurant website',
         skills: 'HTML, CSS',
         img : project01,
-        gitHubLink: 'https://github.com/Anastasi11a/'
+        gitHubLink: 'https://github.com/Anastasi11a/',
     },
     {
         title: 'Quiz Creator',
         skills: 'JavaScript, React, Bootstrap v5',
         img : project00,
-        gitHubLink: 'https://github.com/Anastasi11a/quizcreator'
+        gitHubLink: 'https://github.com/Anastasi11a/quizcreator',
     },
     {
         title: 'Password Generator',
         skills: 'TypeScript, React, ChakraUi',
         img : project02,
-        gitHubLink: 'https://github.com/Anastasi11a/passwordgenerator'
+        visitLink: "https://anastasi11a.github.io/passwordgenerator/",
+        gitHubLink: 'https://github.com/Anastasi11a/passwordgenerator',
     },
     // {
     //     title: '',

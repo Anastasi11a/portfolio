@@ -70,7 +70,7 @@ export const itemStyles = {
     // Projects styles
     containerProjects: {
         display: "flex",
-        background: "linear-gradient(to bottom, #343a40, #212529)",
+        backgroundColor: "#343a40",
         justifyContent: "center",
         alignItems: "center",
         padding: "8rem 5rem",
@@ -92,9 +92,9 @@ export const itemStyles = {
     cardTitle: {
         textAlign: "center",
         color: "#f8f9fa",
-        padding: "1.5rem",
+        marginRight: "1rem",
         fontWeight: "bold",
-        fontSize: "1.25rem",
+        fontSize: "1.3rem",
     },
     cardBody: {
         display: "flex",
@@ -119,22 +119,32 @@ export const itemStyles = {
         textAlign: 'center',
         marginTop: '0.8rem',
         transition: 'color 0.3s',
+    },
+    btnVisit: {
+        color: '#343a40',
+        paddingBottom: '0.5rem',
     }
 };
 
 export const btnEffects = {
-    btnHoverEffect: (e) => {
-        e.target.style.color = '#0dcaf0';
+    btnHoverEffect: ({ target }) => {
+        target.style.color = '#0dcaf0';
     },
-    btnLeaveEffect: (e) => {
-        e.target.style.color = 'white';
+    btnLeaveEffect: ({ target }) => {
+        target.style.color = '#f8f9fa';
     },
-    btnFooterHoverEffect: (e) => {
-        e.target.style.color = '#0dcaf0';
-        e.target.style.transform = 'scale(1.2)';
+    btnFooterHoverEffect: ({ target }) => {
+        target.style.color = '#0dcaf0';
+        target.style.transform = 'scale(1.2)';
     },
-    btnFooterLeaveEffect: (e) => {
-        e.target.style.color = 'white';
-        e.target.style.transform = 'scale(1)';
+    btnFooterLeaveEffect: ({ target }) => {
+        target.style.color = '#f8f9fa';
+        target.style.transform = 'scale(1)';
+    },
+    btnVisitHoverEffect: ({ target }) => {
+        target.style.color = '#f8f9fa';
+    },
+    btnVisitLeaveEffect: ({ target }) => {
+        target.style.color = '#343a40';
     },
 };
