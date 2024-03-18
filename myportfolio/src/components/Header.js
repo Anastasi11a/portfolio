@@ -1,4 +1,5 @@
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import socials from './socials';
 import { btnEffects, itemStyles } from './styles';
@@ -8,19 +9,34 @@ const Header = () => {
         <Navbar 
             collapseOnSelect 
             fixed="top"
-            expand="lg" 
+            expand="sm" 
             data-bs-theme="dark" 
             style={itemStyles.navbarStyle}>
 
             <Container fluid>
-                <Navbar.Brand href="#home" style={itemStyles.brandStyle}>
+                <Navbar.Brand style={itemStyles.brandStyle}>
                     Portfolio
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav" style={itemStyles.collapseSlyle}>
-                    <Nav defaultActiveKey='/'>
-                        <Nav.Link href="/" className="me-3">Home</Nav.Link>
-                        <Nav.Link href="/projects" className="me-3">Projects</Nav.Link>
+                <Navbar.Collapse 
+                    id="responsive-navbar-nav" 
+                    style={itemStyles.collapseSlyle}>
+                        
+                    <Nav defaultActiveKey='/portfolio/'>
+                        <Nav.Link 
+                            as={Link} 
+                            href="#portfolio" 
+                            to="/portfolio/" 
+                            className="me-3">
+                            Home
+                        </Nav.Link>
+                        <Nav.Link 
+                            as={Link} 
+                            href="#portfolio/projects"
+                            to="/portfolio/projects" 
+                            className="me-3">
+                            Projects
+                        </Nav.Link>
 
                         <NavDropdown 
                             title="Contact" 

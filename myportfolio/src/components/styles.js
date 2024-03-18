@@ -38,7 +38,7 @@ export const itemStyles = {
         height: "100vh",
         display: "flex",
         flexDirection: "column",    
-        background: "linear-gradient(to bottom, #343a40, #000000)",
+        backgroundColor: "#343a40",
         justifyContent: "center",
         alignItems: "center",
         paddingTop: "4rem",
