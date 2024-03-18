@@ -1,7 +1,7 @@
 import { Card, Row } from "react-bootstrap";
 import projects from "./progectsList";
 import VisitSite from "../btn-links/VisitSite";
-import BtnGitHub from "./BtnGitHub";
+import BtnGitHub from "../btn-links/BtnGitHub";
 import { itemStyles } from "../styles";
 
 const Projects = () => {
