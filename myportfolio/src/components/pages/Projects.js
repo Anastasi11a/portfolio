@@ -1,8 +1,7 @@
-import { Card, Row } from "react-bootstrap";
+import { Card, Col, Row } from "react-bootstrap";
 import projects from "./progectsList";
-import VisitSite from "../btn-links/VisitSite";
 import BtnGitHub from "../btn-links/BtnGitHub";
-import { itemStyles } from "../styles";
+import { itemStyles, btnEffects } from "../styles";
 
 const Projects = () => {
     return (  
@@ -12,22 +11,40 @@ const Projects = () => {
                     <div key={idx} className="mb-4">
                         <Card style={itemStyles.card}>
                             <Card.Body style={itemStyles.cardBody}>
-                                <Card.Title style={itemStyles.cardTitle}>
-                                    {project.title}
-                                </Card.Title>
-                                <VisitSite link={project.visitLink} />
+                                <Card.Link 
+                                    href={project.visitLink}
+                                    target='_blank' 
+                                    style={itemStyles.cardLink}
+                                    onMouseEnter={btnEffects.btnHoverEffect}
+                                    onMouseLeave={btnEffects.btnLeaveEffect}>
+
+                                    <Card.Title 
+                                        title='Visit site'
+                                        style={itemStyles.cardTitle}>
+                                        {project.title}
+                                    </Card.Title>
+                                    <Card.Img 
+                                    fluid 
+                                    title='Visit site'
+                                    src={project.img} 
+                                    style={itemStyles.cardImg}/>
+                                </Card.Link>
                             </Card.Body>
-
-                            <Card.Img 
-                                src={project.img} 
-                                style={itemStyles.cardImg} 
-                            />
-
                             <Card.Body style={itemStyles.cardBody}>
                                 <Card.Text style={itemStyles.cardText}>
-                                    {project.skills}
+                                    <Col>Description:</Col>
+                                    <Col style={itemStyles.skillsTxt}>{project.description}</Col>
+                                    <Col>Features:</Col>
+                                    <Col style={itemStyles.skillsTxt}>{project.features}</Col>
+                                    <Col>Technologies used:</Col>
+                                    <Col style={itemStyles.skillsTxt}>{project.skills}</Col>
+                                    <Row>
+                                        <Col>
+                                            GitHub repository: <span><BtnGitHub link={project.gitHubLink} /></span>
+                                        </Col>
+                                    </Row>
                                 </Card.Text>
-                                <BtnGitHub link={project.gitHubLink} />
+                                
                             </Card.Body>
                         </Card>
                     </div>
